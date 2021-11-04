@@ -1,0 +1,208 @@
+body {
+    margin: 0;
+    background-color: rgb(247, 247, 247);
+    overflow-x: hidden;
+}
+
+.content {
+    width: 100vw;
+    height: 300vh;
+}
+
+
+/* Enlaces */
+
+a:link {
+    background-color: transparent;
+    
+    color: rgb(124, 124, 124);
+    text-decoration: none;
+}
+
+a:visited {
+    background-color: transparent;
+    
+    color: rgb(124, 124, 124);
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: transparent;
+    
+    color: rgb(0, 118, 197);
+    text-decoration: underline;
+}
+
+
+/* NavBar */
+
+.grid {
+    z-index: 1;
+
+    background-color: rgb(255, 255, 255);
+    
+    margin: 0;
+    
+    height: 55px;
+    width: 100%;
+    
+    overflow: hidden;
+    position: fixed;
+    
+    display: grid;
+    
+    grid-template-columns: 1fr 1fr 1fr 1fr 4fr 1fr;
+    grid-template-rows: 1fr;
+    
+}
+
+.logo{
+    grid-column: 2;
+    grid-row: 1;
+    
+    margin-left: 20%;
+    
+    vertical-align: center;
+}
+
+.navbar-list {
+    grid-row: 1;
+    grid-column: 5;
+    
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+    padding-left: 0;
+    margin: 0;
+    
+    list-style-type: none;
+    
+    color: gray;
+}
+
+.navbar-list-element {
+    margin:auto;
+    
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+
+.button-donate {
+    background-color: #0091cf;
+    color: white;
+    
+    width: 112px;
+    height: 36px;
+    
+    border-style: none;
+    border-radius: 5px;
+    
+    cursor: pointer;
+    
+}
+
+
+/* Hero */
+
+.hero {
+    width: 100vw;
+    height: 94vh;
+    
+    position: relative;
+    
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./assets/img/blender-img.png);
+    background-size: cover;
+}
+
+.hero-content {
+    width: 680px;
+    height: 300px;
+    
+    margin-bottom: -150px;
+    
+    position: absolute;
+    left: 224px;
+    bottom: 60%;
+}
+
+.hero-title {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 60px;
+
+    margin: 0;
+    padding: 0;
+
+    color: white;
+}
+
+.hero-text {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 25px;
+    
+    margin: 0;
+    padding: 0;
+    
+    color: white;
+}
+
+.hero-list {
+    grid-row: 1;
+    grid-column: 5;
+    
+    padding-left: 0;
+    margin: 0;
+    margin-top: 25px;
+
+    list-style-type: none;
+
+    color: gray;
+}
+
+.hero-list-element {
+    margin-right: 30px;
+    
+    float: left;
+}
+
+.button-download {
+    background-color: #00A4EB;
+    
+    margin-left: 0;
+    margin-right: 20px;
+    
+    width: 224px;
+    height: 41px;
+    
+    border-style: none;
+    border-radius: 5px;
+    
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+
+    cursor: pointer;
+}
+
+.button-info {
+    background: 50%;
+    
+    margin-left: 0;
+    margin-right: 20px;
+
+    width: 128px;
+    height: 41px;
+    
+    border: 2px solid white;
+    border-radius: 5px;
+    
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+
+    cursor: pointer;
+}
